@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="contents">
+    <div id="right_contents">
+        <table>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>전공</td>
+                <td>
+                    <select>
+                        <option value="컴퓨터공학">컴퓨터공학</option>
+                        <option value="전자전기공학">전자전기공학</option>
+                        <option value="멀티미디어공학">멀티미디어공학</option>
+                        <option value="산업시스템공학">산업시스템공학</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>학년</td>
+                <td>
+                    <input type="radio" name="grade" value="1학년">1학년
+                    <input type="radio" name="grade" value="2학년">2학년
+                    <input type="radio" name="grade" value="3학년">3학년
+                    <input type="radio" name="grade" value="4학년">4학년
+                </td>
+            </tr>
+            <tr>
+                <td>관심분야</td>
+                <td>
+                    <input type="checkbox" name="interest1" value="인공지능" checked>인공지능
+                    <input type="checkbox" name="interest2" value="생명공학" >생명공학
+                    <input type="checkbox" name="interest3" value="로봇공학" >로봇공학
+                    <input type="checkbox" name="interest4" value="신소재공학" >신소재공학
+                </td>
+            </tr>
+            <tr>
+                <td>건의사항</td>
+                <td><textarea cols="55" rows="4" placeholder="저에게 하고 싶은 말씀을 적어주세요."></textarea></td>
+            </tr>
+            <tr>
+                <td id="submit" colspan="2">
+                    <form action="submit.asp" method="POST">
+                        <input type="submit" value="보내기" name="send">
+                        <input type="submit" value="취소">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

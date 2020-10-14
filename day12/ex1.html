@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습과제1</title>
+    <script lang="JavaScript">
+        var correct = 0;
+
+        function scores(){
+            var answer1 = document.getElementsByName("ans1");
+            var answer2 = document.getElementsByName("ans2");
+            var answer3 = document.getElementsByName("ans3");
+            var score = document.getElementById("score");
+
+            if(answer1[1].checked){
+                correct++;
+            }
+            if(answer2[3].checked){
+                correct++;
+            }
+            if(answer3[0].checked){
+                correct++;
+            }
+
+            score.value = correct;
+            correct = 0;  
+        }
+        function reset_value(){
+            var score = document.getElementById("score");
+            score.value = 0;
+        }
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">문제</h2>
+    <hr color="red"><br>
+    <form>
+        <h4>1. 브라우저에서 문서의 유형을 알려주는 것으로, HTML5의 문서 유형을 선언하는 html태그는?</h4>
+        <div style="margin: 50px;">
+            <input type="radio" name="ans1" value="!HTML5">!HTML5
+            <input type="radio" name="ans1" value="!DOCTYPE">!DOCTYPE
+            <input type="radio" name="ans1" value="!DOCTYPES5">!DOCTYPE5
+            <input type="radio" name="ans1" value="!HTML5-DOCTYPE">!HTML5-DOCTYPE<br><br>
+        </div>
+
+        <h4>2. 중요하다고 생각되는 부분을 표시하는 태그는?</h4>
+        <div style="margin: 50px;">
+            <input type="radio" name="ans2" value="progress">progress
+            <input type="radio" name="ans2" value="input">input
+            <input type="radio" name="ans2" value="summary">summary
+            <input type="radio" name="ans2" value="mark">mark<br><br>
+        </div>
+
+            <h4>3. 화면의 너비 때문에 줄바꿈이 필요한경우에 지정된 곳에서 줄바꿈을 이용하는 태그는?</h4>
+        <div style="margin: 50px;">
+            <input type="radio" name="ans3" value="wbr">wbr
+            <input type="radio" name="ans3" value="fieldset">fieldset
+            <input type="radio" name="ans3" value="legend">legend
+            <input type="radio" name="ans3" value="meter">meter<br><br>
+        </div>
+            
+        <input type="button" value="채점" onclick="scores()">
+        <input type="reset" value="리셋" onclick="reset_value()">
+        <meter id="score"  min="0" max="3" value="0"></meter>
+    </form>
+</body>
+</html>

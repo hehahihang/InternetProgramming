@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습과제1</title>
+    
+    <style type="text/css">
+        canvas {
+            border: 2px solid black;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="cvs" width="800px" height="300px"></canvas>
+    <script lang="JavaScript">
+        var wpcanvas = document.getElementById('cvs');
+        var wpcontext = wpcanvas.getContext('2d');
+        
+        //빨간 동그라미
+        wpcontext.beginPath();
+        wpcontext.arc(200,150,80,0*Math.PI,1*Math.PI,true);
+        wpcontext.fillStyle="red";
+        wpcontext.fill();
+        wpcontext.closePath();
+
+        wpcontext.beginPath();
+        wpcontext.arc(200,150,80,0*Math.PI,1*Math.PI,false);
+        wpcontext.fillStyle="red";
+        wpcontext.fill();
+        wpcontext.closePath();
+
+        //노란 동그라미
+        wpcontext.beginPath();
+        wpcontext.arc(400,150,80,0*Math.PI,1*Math.PI,true);
+        wpcontext.fillStyle="yellow";
+        wpcontext.fill();
+        wpcontext.closePath();
+
+        wpcontext.beginPath();
+        wpcontext.arc(400,150,80,0*Math.PI,1*Math.PI,false);
+        wpcontext.fillStyle="yellow";
+        wpcontext.fill();
+        wpcontext.closePath();
+        
+        //초록 동그라미
+        wpcontext.beginPath();
+        wpcontext.arc(600,150,80,0*Math.PI,1*Math.PI,true);
+        wpcontext.fillStyle="green";
+        wpcontext.fill();
+        wpcontext.closePath();
+
+        wpcontext.beginPath();
+        wpcontext.arc(600,150,80,0*Math.PI,1*Math.PI,false);
+        wpcontext.fillStyle="green";
+        wpcontext.fill();
+        wpcontext.closePath();
+
+    </script>  
+</body>
+</html>

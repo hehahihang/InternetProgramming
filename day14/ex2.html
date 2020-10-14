@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습과제2</title>
+    <style type="text/css">
+        canvas{
+            
+            border: black solid 1px ;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="cvs" width="500px" height="500px"></canvas>
+    <script lang="JavaScript">
+        var wpcanvas = document.getElementById('cvs');
+        var wpcontext = wpcanvas.getContext('2d');
+        
+        wpcontext.fillStyle="red";
+        wpcontext.font="italic small-caps bold 80px 궁서체";
+        wpcontext.shadowColor="grey";
+        wpcontext.shadowBlur="5";
+        wpcontext.shadowOffsetX="30";
+        wpcontext.shadowOffsetY="30";
+        wpcontext.fillText("안녕하세요!",10,100);
+
+        for(i=0;i<3;i++){
+            wpcontext.beginPath();
+            wpcontext.rect(50+140*i,200,70,70);
+            wpcontext.fillStyle="black";
+            wpcontext.fill();
+            wpcontext.closePath();
+        }
+
+        for(i=0;i<2;i++){
+            wpcontext.beginPath();
+            wpcontext.rect(120+140*i,270,70,70);
+            wpcontext.fillStyle="black";
+            wpcontext.fill();
+            wpcontext.closePath();
+        }
+
+        for(i=0;i<3;i++){
+            wpcontext.beginPath();
+            wpcontext.rect(50+140*i,340,70,70);
+            wpcontext.fillStyle="black";
+            wpcontext.fill();
+            wpcontext.closePath();
+        }
+    </script>
+    
+</body>
+</html>

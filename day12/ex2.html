@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>   
+   <head>
+      <title> 실습과제 2 </title>
+      <script language="javascript">
+		var k=0;			
+           function mark() {
+			var mun1 = document.getElementsByName("choice1");
+			var mun2 = document.getElementsByName("choice2");
+			var mun3 = document.getElementsByName("choice3");
+			var me = document.getElementById("me");
+
+			if(mun1[1].checked){
+				k += 1;
+			}
+			if(mun2[3].checked){
+				k += 1;
+			}
+			if(mun3[0].checked){
+				k += 1;
+			}
+			me.value=k;
+			k=0;
+		   }
+		   function re(){
+			var me = document.getElementById("me");
+			me.value=0;
+		   }
+	</script>	
+   </head>
+	<body>
+	<h2><center>문 제</center></h2>
+	<HR color="red">
+      <form>
+		 <br><br><h4>1. 브라우저에서 문서의 유형을 알려주는 것으로, HTML5의 문서 유형을 선언하는 html태그는?</h4> <br><br>
+         <input type="radio" name="choice1" value="2"> !HTML5
+         <input type="radio" name="choice1" value="1"> !DOCTYPE
+		 <input type="radio" name="choice1" value="2"> !DOCTYPE5
+		 <input type="radio" name="choice1" value="2"> !HTML5-DOCTYPE
+
+		 <br><br><h4>2. 중요하다고 생각되는 부분을 표시하는 태그는?</h4><br><br>
+		 <input type="radio" name="choice2" value="2"> autocomplete
+         <input type="radio" name="choice2" value="2"> autofocus
+		 <input type="radio" name="choice2" value="2"> pattern
+		 <input type="radio" name="choice2" value="1"> placeholder
+
+		 <br><br><h4>3. 화면의 너비 때문에 줄바꿈이 필요한경우에 지정된 곳에서 줄바꿈을 이용하는 태그는?</h4><br><br>
+		 <input type="radio" name="choice3" value="1"> summary
+         <input type="radio" name="choice3" value="2"> fieldset
+		 <input type="radio" name="choice3" value="2"> legend
+		 <input type="radio" name="choice3" value="2"> meter
+
+         <br><br><input type="button" value="채점" onclick="mark()">
+		 <input type="reset" value="리셋" onclick="re()">
+		 <meter id="me" min="0" max="3" value="0"></meter>
+      </form>
+   </body>
+</html>

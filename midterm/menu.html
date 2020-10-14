@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴</title>
+    <style type="text/css">
+        #menu{
+            background-color: #efefef; height: 500px;
+        }
+        #menu_list{
+            width: 100px; height: 250px; background-color: white;
+            padding-left: 10px; padding-right: 10px; padding-top: 20px; padding-bottom: 20px;
+            margin-left: 10px; margin-right: 10; margin-top: 130px; margin-bottom: 50px;
+            border-radius: 5px; box-shadow: 0px 2px 6px rgba(100,100,100,0.3);
+        }
+        ol{
+            list-style: none;
+        }
+        li{
+            margin-top: 15px; margin-bottom: 20px; font-size: 15px; padding-bottom: 10px ;
+            font-size: 15px; color: darkslategrey;
+            text-align: center; border-bottom: 1px solid;
+        }
+        li a:hover{color: white; background-color: #2f4f4f;}
+
+        li.l5{
+            border-bottom: none;
+        }
+        a{
+            text-decoration: none;
+            color: darkslategrey; 
+        }
+        <!--여기만 해결하면댐-->
+        .search-bar{
+            position: absolute;
+        }
+        .input-search{width: 100px; height: 26px; 
+        border-style: 2px black solid; border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+        }
+        .input-search-submit{
+        margin-left: -7px; padding-bottom: 26px; padding-top: 2px; 
+        width:50px; height: 26px; display: inline-block; font-size: 15px; 
+        border-style: 2px black solid; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+        }
+       
+
+    </style>
+</head>
+<body id="menu">
+    <div>
+        <ol id="menu_list" >
+            <li class="l1"><a href="intro.html" target="right"><b>강의개요</b></a></li>
+            <li class="l2"><a href="schedule.html" target="right"><b>강의일정</b></a></li>
+            <li class="l3"><a href="suggestions.html" target="right"><b>설문조사</b></a></li>
+            <li class="l4"><a href="resume.html" target="right"><b>이력서</b></a></li>
+            <li class="l5"><a href="contents.html" target="right"><b>처음화면</b></a></li>
+       </ol>
+    </div>
+    <div class="search-bar">
+        <form>
+            <input type="text" class="input-search" >
+            <input type="submit" class="input-search-submit" value="검색" >
+        </form>
+    </div> 
+</body>
+</html>

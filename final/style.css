@@ -1,0 +1,155 @@
+@media screen and (max-width: 1200px){
+    #video{
+        display: none;
+    }
+}
+
+header, nav, article, footer{
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: block;
+}
+
+header{
+    width: 70%;
+    background-color: lightyellow;
+    text-align: center;
+    font-size: 25px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    background-color: lightgreen;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    background-color: powderblue;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: mistyrose;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60%;
+    width: 70%;
+}
+
+
+#nav{
+    border: 3px double black;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul li{
+    box-shadow: 5px 5px 5px 2px  grey;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: orange;
+    list-style: none;
+    margin-right: 100px;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#join{
+    background-color: white;
+    border: 1px solid black;
+}
+
+article h2{
+    text-align: center;
+}
+
+#outer{
+    background-color: white;
+    
+}
+
+#inner{
+    border: 1px dashed black;
+    justify-content: center;
+    width: 90%;
+}
+#number{
+    border-spacing: 10px;
+}
+
+#display{
+    text-align: right;
+    width: 630px;
+    height: 30px;
+}
+
+#name{
+    width: 100px;
+}
+
+input[type="button"]{
+    background-color: white;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+}
+
+#zero{
+    background-color: white;
+    width: 30px;
+    height: 50px;
+}
+
+video{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+section{
+    display: flex; 
+}
+
+fieldset{
+    padding:10px;
+    background-color: white;
+    width: 500px;
+    height: 343px;
+    margin-left: 50px;
+}
+
+legend{
+    background-color: white;
+}
+
+select{
+    overflow: hidden;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
+#timer{
+    border: 1px solid black;
+}
+
+#meter{
+    width: 150px;
+    height: 20px;
+}

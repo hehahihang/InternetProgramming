@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기 프로그램</title>
+    <script lang="JavaScript">
+        var input;
+        function cal(input){
+            var a = document.getElementById("x").value;
+            var b = document.getElementById("y").value;
+            var result;
+
+            if(input=="+"){
+                result = parseInt(a)+parseInt(b);   
+            }
+            else if(input=="-"){
+                result = parseInt(a)-parseInt(b);
+            }
+            else if(input=="*"){
+                result = parseInt(a)*parseInt(b);
+            }
+            else{
+                result = parseInt(a)/parseInt(b);
+            }
+            document.calculate.answer.value = result;
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1>첫번째 페이지는 계산기 프로그램입니다.</h1>
+    <form>
+        <input type="button" value="이전페이지" onclick="location.replace('ex2.html')">
+        <input type="button" value="다음페이지" onclick="location.replace('event.html')">
+    </form><hr>
+    <h3>첫번째 값, 두번째 값에 숫자를 입력한 후 원하는 사칙연산 버튼 클릭하기</h3>
+    첫번째 값: <input type="text" id="x"><br><br>
+    두번째 값: <input type="text" id="y"><br><br>
+    <form name="calculate">
+        <input type="button" value="+" onclick="cal(value)">
+        <input type="button" value="-" onclick="cal(value)">
+        <input type="button" value="*" onclick="cal(value)">
+        <input type="button" value="/" onclick="cal(value)"><br><br>
+        결과 : <input type="text" id="total" name="answer">
+    </form>
+</body>
+</html>

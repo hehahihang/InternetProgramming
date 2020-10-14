@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이어 연습 페이지</title>
+    <style type="text/css">
+        #d1{
+            width: 30%;
+            float: left;
+            text-align: right;
+        }
+        #d2{
+            width: 40%;
+            float: left;
+        }
+        #d3{
+            width: 30%;
+            float: left;
+        }
+    </style>
+    <script lang="JavaScript">
+        function change_red(){
+            document.getElementById('black').src="red.jpg"
+        }
+        function change_yellow(){
+            document.getElementById('black').src="yellow.jpg"
+        }
+        function change_green(){
+            document.getElementById('black').src="green.jpg"
+        }
+        function change_black(){
+            document.getElementById('black').src="black.jpg"
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1>세번째 페이지는 레이어 연습입니다.</h1>
+    <hr><form>
+        <input type="button" value="이전페이지" onclick="location.replace('event.html')">
+        <input type="button" value="다음페이지" onclick="location.replace('object.html')">
+    </form><hr>
+    <h3>버튼을 눌러 위치를 바꿔보세요.</h3>
+    <div id="d1">
+        <img src="red.jpg"><br>
+        <img src="green.jpg"><br>
+        <img src="yellow.jpg"><br>
+    </div>
+    <div id="d2">
+        <img id="black" src="black.jpg"><br><br>
+        <form name="insert">
+            <input type="button" value="빨간불 넣기" onclick="change_red()">
+            <input type="button" value="노란불 넣기" onclick="change_yellow()">
+            <input type="button" value="초록불 넣기" onclick="change_green()">
+        </form>
+        <br>
+        <form name="delete">
+            <input type="button" value="빨간불 빼기" onclick="change_black()">
+            <input type="button" value="노란불 빼기" onclick="change_black()">
+            <input type="button" value="초록불 빼기" onclick="change_black()">
+        </form>
+    </div>
+    <div id="d3">
+    </div>
+</body>
+</html>

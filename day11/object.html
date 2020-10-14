@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 연습</title>
+</head>
+<body style="text-align: center;">
+    <h1>마지막 페이지는 레이어 연습입니다.</h1>
+    <hr><form>
+        <input type="button" value="이전페이지" onclick="location.replace('layer.html')">
+        <input type="button" value="처음페이지" onclick="location.replace('ex2.html')">
+    </form><hr>
+    <script lang="JavaScript">
+        var str1="JAVASCRIPT"
+        var str2="web programming"
+        var str3="컴퓨터개론"
+        var str4 = new Array(4);
+            str4[0] = "자료구조"
+            str4[1] = "데이터베이스"
+            str4[2] = "알고리즘"
+            str4[3] = "운영체제"
+        var str5 = str4.join("-");
+
+        document.write("JAVASCRIPT의 문자 개수 :"+str1.length+"<br>")
+        document.write("컴퓨터개론의 문자 개수 :"+str3.length+"<hr>")
+        document.write("소문자로 문자열 변환하기 :"+str1.toLowerCase()+"<br>")
+        document.write("대문자로 문자열 변환하기:"+str2.toUpperCase()+"<hr>")
+        document.write("배열 출력:"+str4+"<br>")
+        document.write("분리자가 변경된 배열 출력:"+str5+"<hr>")
+
+        document.write("[반복문으로 배열 subject 출력]"+"<br><br>");
+        for(i=0;i<str4.length;i++){
+            document.write("subject["+i+"] = "+str4[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

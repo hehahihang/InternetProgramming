@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습과제2</title>
+    <style type="text/css">
+        table{
+            border: 1px solid white;
+            width: 700px;   
+            color: grey;
+        }
+        td.info{
+            color: black;
+        }
+        #tmTable tr:nth-child(odd){background-color: #f2f2f2;}
+
+    </style>
+</head>
+<body>
+    <center><h2>회원가입</h2><br>
+    <hr color="blue"><br><br>
+    <table id="tmTable" name="table">
+    <form>
+       <tr>
+           <td class="info">아이디</td>
+           <td><input type="text" placeholder="아이디 입력란">&nbsp&nbsp최대12자리</td>
+       </tr>
+       <tr>
+           <td class="info">비밀번호</td>
+           <td><input type="text" required>&nbsp&nbsp최대13자리</td>
+        </tr>
+        <tr>
+            <td class="info">비밀번호 확인</td>
+            <td><input type="text"></td>
+         </tr>
+        <tr>
+            <td class="info">좋아하는 색</td>
+            <td><input type="color" name="color"></td>
+        </tr>
+        <tr>
+            <td class="info">생년월일</td>
+            <td><input type="datetime" name="datetime" placeholder="연도-월-일"></td>
+        </tr>
+        <tr>
+            <td class="info">이메일 주소</td>
+            <td><input type="text" name="first" autofocus> @ 
+                <input list="domains" name="domain">
+                <datalist id="domains">
+                    <option value="naver.com">
+                    <option value="hanmail.net">
+                    <option value="nate.com">
+                    <option value="dongguk.edu">       
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td class="info">자기소개</td>
+            <td><textarea cols="20" rows="15" style="height: 300px; width: 350px;"></textarea> </td>
+        </tr>
+    </table>
+        <form action="submit.asp" method="POST">
+            <input type="submit" value="확인">
+            <input type="submit" value="취소">
+        </form>
+    </form>
+    </center>
+</body>
+</html>
